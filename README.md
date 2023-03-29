@@ -1,12 +1,12 @@
 # desfio-dynamodb-dio
-##Desafio de boas práticas no DynamoDB para o bootcamp Java Developer da DIO
+## Desafio de boas práticas no DynamoDB para o bootcamp Java Developer da DIO
 
 Features Relacionais (SQL) e Não Relacionais (NoSQL) com o DynamoDB.
 
 Assim como no exemplo do desfio criei uma tabela Music utilizando os serviços da Amazon DynamoDB e Amazon CLI para execução em linha de comando.
 Em adição ao exemplo eu criei uma nova tabela MyPlaylist com músicas de uma das minhas playlists do Spotify.
 
-###Comandos utilizados:
+### Comandos utilizados:
 Criar nova tabela
 '''aws dynamodb create-table  --table-name MyPlaylist  --attribute-definitions  AttributeName=Artist,AttributeType=S  AttributeName=SongTitle,AttributeType=S  --key-schema  AttributeName=Artist,KeyType=HASH  AttributeName=SongTitle,KeyType=RANGE  --provisioned-throughput  ReadCapacityUnits=10,WriteCapacityUnits=5'''
 
